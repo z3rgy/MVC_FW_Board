@@ -12,13 +12,13 @@ public class UpdateBoardController implements Controller{
 	@Override
 	public String handleRequest(HttpServletRequest request, HttpServletResponse response) {
 		String title = request.getParameter("title");
-		String writer = request.getParameter("writer");
+//		String writer = request.getParameter("writer");
 		String content = request.getParameter("content");
 		String seq = request.getParameter("seq");
 		
 		BoardDO boardDO = new BoardDO();
 		boardDO.setTitle(title);
-		boardDO.setWriter(writer);
+//		boardDO.setWriter(writer);
 		boardDO.setContent(content);
 		boardDO.setSeq(Integer.parseInt(seq));
 		
